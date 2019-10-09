@@ -9,17 +9,28 @@
   	<option value="choix3">choix03</option>
   </select>
   
-  <label for='chk1'>Check 01<label/>
+  <p>
+  <label for='chk1'>Poulet</label>
   <input type = "checkbox" name ="chk1"/>  
-    
-  <label for='chk2'>Check 02<label/>
+  </p>
+  
+  <p>
+  <label for='chk2'>Lapin</label>
   <input type = "checkbox" name ="chk2"/>
-    
-  <label for='chk3'>Check 03<label/>
+  </p>
+
+  <p>
+  <label for='chk3'>Cabri</label>
   <input type = "checkbox" name ="chk3"/>
-    
-  <label for='chk4'>Check 04<label/>
+  </p>
+  
+  <p>
+  <label for='chk4'>Porc</label>
   <input type = "checkbox" name ="chk4"/>
-    
+  </p> 
+  
+  <p>
   <input type = "submit" name ="valider"/>
+  </p>
+
 </form> 

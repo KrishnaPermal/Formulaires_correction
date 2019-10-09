@@ -9,10 +9,10 @@
 			
 			$choix = $_POST['choix'];
 
-			$chkbx1 = $_POST['chk1'];
-      $chkbx2 = $_POST['chk2'];
-			$chkbx3 = $_POST['chk3'];
-			$chkbx4 = $_POST['chk4'];
+			$chkbx1 = isset($_POST['chk1']);
+      $chkbx2 = isset($_POST['chk2']);
+			$chkbx3 = isset($_POST['chk3']);
+			$chkbx4 = isset($_POST['chk4']);
 ?>
 
 <form action ="cible.php" method="post">
@@ -35,6 +35,7 @@
   	<option value="choix1" <?php if ($choix === "choix1"){
           echo"selected";}?> 
       >choix01</option>
+
   	<option value="choix2"  <?php if ($choix === "choix2"){
           echo"selected";}?> >choix02</option>
       
@@ -43,17 +44,19 @@
       >choix03</option>
   </select>
   
-  <label for='chk1'>Check 01</label>
+
+
+  <label for='chk1'>Poulet</label>
   <input type = "checkbox" name ="chk1" 
     <?php if ($chkbx1 == "on"){echo 'checked';}?>/>  
     
-  <label for='chk2'>Check 02</label>
+  <label for='chk2'>Lapin</label>
   <input type = "checkbox" name ="chk2" <?php if ($chkbx2 == "on"){echo 'checked';}?>/>
     
-  <label for='chk3'>Check 03</label>
+  <label for='chk3'>Cabri</label>
   <input type = "checkbox" name ="chk3" <?php if ($chkbx3 == "on"){echo 'checked';}?>/>
     
-  <label for='chk4'>Check 04</label>
+  <label for='chk4'>Porc</label>
   <input type = "checkbox" name ="chk4" <?php if ($chkbx4 == "on"){echo 'checked';}?>/>
     
   <input type = "submit" name ="valider"/>
@@ -61,7 +64,7 @@
 
 
 
-
+<!-- A TERMINER (RAJOUTER REGEX) -->
 
 
  
